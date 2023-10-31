@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Playfair+Display:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+}
+
+h1 {
+
+    font-family: 'Playfair Display', serif;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+}
+
+h3 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+}
+
+h4 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+
+
+}
+
+h5 {
+
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+h6 {
+
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+p,
+.color-p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.color-p {
+    color: #180B81;
+    font-weight: 800;
+    letter-spacing: 6.4px;
+    text-transform: uppercase;
+}
