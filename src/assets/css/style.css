@@ -13,6 +13,11 @@ img {
     height: 100%;
 }
 
+ol,
+ul {
+    padding-left: 0;
+}
+
 li {
     list-style: none;
 }
@@ -672,10 +677,48 @@ hr.hr {
 /*end work-process */
 
 /* our service  */
+.service-card {
+    width: 420px;
+    height: 192px;
+}
+
+.service-img {
+    width: 100%;
+    height: 192px;
+}
+
+/* .service-card .card-footer {
+    background-color: transparent;
+    border: 0px;
+} */
+
+/* .service-card .card {
+    background-color: transparent;
+    border: 0px;
+} */
 
 /* end our service  */
 
+/*start our architecture  */
+.our-architect-div {
+    background-color: var(--header-bg);
+}
 
+.architect-img {
+    height: 330px;
+}
+
+.card {
+    border: 0px;
+    background-color: transparent;
+}
+
+.card-footer {
+    background-color: transparent;
+    border: 0px;
+}
+
+/*end our architecture  */
 
 /* ---------------------- */
 /* circle text  */
@@ -685,6 +728,48 @@ hr.hr {
     top: 20px;
 }
 
+/* ------------- */
+.circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    font-size: 16px;
+    line-height: 55px;
+    animation: textRotation 10s linear infinite;
+}
+
+@keyframes textRotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.text span {
+    position: absolute;
+    left: 50%;
+    font-size: 14px;
+    transform-origin: 0 100px;
+}
+
+/* --------------- */
 .circle-work-process .circle {
     position: relative;
     width: 200px;
@@ -744,4 +829,251 @@ hr.hr {
     text-decoration-color: var(--brand-color);
     text-decoration-thickness: 4px;
     text-underline-offset: 8px;
+}
+
+/* back to top */
+.back-to-top .box {
+    position: fixed;
+    height: 2px;
+    background-color: var(--brand-color);
+    width: 0;
+    top: 0px;
+    z-index: 9999;
+}
+
+.back-to-top .backTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #262626;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    z-index: 9999;
+
+}
+
+.back-to-top span {
+    color: #fff;
+    font-size: 36px;
+    transform: rotate(90deg);
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+/* back to top */
+
+/* start footer */
+.footer-list-item {
+    transition: .3s all;
+    position: relative;
+    padding: 6px;
+    background: linear-gradient(to right, rgb(255, 255, 255) 50%, var(--header-bg) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+
+}
+
+
+
+.footer-list-item:hover {
+    padding-left: 16px;
+    /* background-color: white; */
+    background-position: left bottom;
+}
+
+.footer-list-item a {
+    color: var(--text-color);
+    display: flex;
+    width: 100%;
+    margin-left: 4px;
+}
+
+.footer-list-item:hover.footer-list-item:after {
+    width: 16px;
+}
+
+.footer-list-item:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0px;
+    background-color: var(--brand-color);
+    left: 0;
+    transform: translate(0%, -50%);
+    top: 50%;
+    transition: .5s all;
+    margin-right: 4px;
+}
+
+.footer-logo {
+    width: 160px;
+    height: 150px;
+    line-height: 160px;
+}
+
+.footer-wrapper {
+    background-color: var(--header-bg);
+}
+
+.footer-bottom {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    color: white;
+}
+
+.footer-title h3 {
+    letter-spacing: 1.28px;
+}
+
+.footer-title .under-line {
+    text-decoration-thickness: 2px;
+}
+
+/* end footer */
+
+/* creative  */
+.creative-img .text {
+    color: #fff;
+    line-height: 100px;
+}
+
+.creative-img .logo {
+    position: absolute;
+    opacity: .9;
+    z-index: 10;
+}
+
+.creative-img {
+    position: relative;
+
+}
+
+.creative-img::before {
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    /* Adjust the alpha value to control darkness */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+button.circle-play-btn {
+    border: 0px;
+    background: transparent;
+}
+
+/* play button */
+
+
+.play-butn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes triangleStroke {
+    from {
+        stroke-dashoffset: 90;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes smallScale {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+.play-button .button {
+    display: inline-block;
+    position: relative;
+}
+
+.play-button .button.is-play {
+    background-color: #FFF;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.play-button .button.is-play .button-outer-circle {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.play-button .button.is-play .button-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    line-height: 85px;
+}
+
+.play-button .button.is-play .button-icon .triangle {
+    animation: fadeIn 7s ease;
+}
+
+.play-button .button.is-play .button-icon .path {
+    stroke-dasharray: 90;
+    stroke-dashoffset: 0;
+    animation: triangleStroke 3s;
+    animation-timing-function: ease;
+}
+
+.play-button .has-scale-animation {
+    animation: smallScale 3s infinite;
+}
+
+.play-button .has-delay-short {
+    animation-delay: 0.5s;
+}
+
+svg.play-btn-svg {
+    min-height: 30%;
+    max-width: 60%;
 }

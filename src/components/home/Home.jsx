@@ -4,6 +4,9 @@ import background from "../../assets/image/background-image/bg.png";
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import WorkProcess from "../work-process/WorkProcess";
+import OurArchitecture from "../our-architecture/OurArchitecture";
+import CreativeEye from "../common-file/creative-eye/CreativeEye";
+import Experience from "../common-file/experience/Experience";
 
 const Home = () => {
     const [index, setIndex] = useState(0);
@@ -11,21 +14,78 @@ const Home = () => {
     const handleSelect = (selectedIndex) => {
         setIndex(selectedIndex);
     };
-    const homeData = {
-        title: 'Home Service',
-        description: 'Home Description',
+    const ourServiceData = {
+        subTitle: 'What we offer',
+        description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         cards: [
             {
                 image: '/src/assets/image/service/1.png',
-                lastUpdated: 'Interior'
-            },
-            {
-                image: '/src/assets/image/service/2.png',
-                lastUpdated: 'Exterior',
+                imageTitle: 'Interior'
             },
             {
                 image: '/src/assets/image/service/1.png',
-                lastUpdated: 'Architecture'
+                imageTitle: 'Exterior',
+            },
+            {
+                image: '/src/assets/image/service/1.png',
+                imageTitle: 'Architecture'
+            },
+        ]
+    };
+
+    const ourArchitectureData = {
+        subTitle: 'architecture firm',
+        description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        cards: [
+            {
+                image: '/src/assets/image/architecture-img/1.png',
+                description: 'Commercial',
+                imageTitle: 'The Shard'
+            },
+            {
+                image: '/src/assets/image/architecture-img/2.png',
+                description: 'Residential',
+                imageTitle: 'One Square',
+            },
+            {
+                image: '/src/assets/image/architecture-img/3.png',
+                description: 'Commercial',
+                imageTitle: 'Newfoundland'
+            },
+            {
+                image: '/src/assets/image/architecture-img/4.png',
+                description: 'Commercial',
+                imageTitle: '	Valiant Tower'
+            },
+            {
+                image: '/src/assets/image/architecture-img/5.png',
+                description: 'Residential',
+                imageTitle: 'One Park Drive'
+            },
+            {
+                image: '/src/assets/image/architecture-img/6.png',
+                description: 'Commercial',
+                imageTitle: '52 Lime Street'
+            },
+        ]
+    };
+    // creative eye
+    const creativeEyeData = {
+        subTitle: 'new adventure',
+        description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        image: '/src/assets/image/home-carousel/1.png',
+        cards: [
+            {
+                image: '/src/assets/image/service/1.png',
+                imageTitle: 'Interior'
+            },
+            {
+                image: '/src/assets/image/service/1.png',
+                imageTitle: 'Exterior',
+            },
+            {
+                image: '/src/assets/image/service/1.png',
+                imageTitle: 'Architecture'
             },
         ]
     };
@@ -107,18 +167,17 @@ const Home = () => {
             {/* WorkProcess section  */}
 
             <WorkProcess></WorkProcess>
-            {/* WorkProcess section  */}
 
-            <div className="our-service-div">
-                <OurService cardsItemsDes={homeData} ></OurService>
-            </div>
+            {/* OurService */}
+            <OurService cardsItemsDes={ourServiceData} ></OurService>
 
-            <div className="container">
-                <div className="row justify-content-between">
-                    <div className="col-lg-6" ><div style={{ height: 350, backgroundColor: 'red' }}>hi</div></div>
-                    <div className="col-lg-6" ><div style={{ height: 350, backgroundColor: 'red' }}>hi</div></div>
-                </div>
-            </div>
+            {/* our architecture */}
+            <OurArchitecture cardsItemsDes={ourArchitectureData} ></OurArchitecture>
+
+            {/* creative eye */}
+            <CreativeEye cardsItemsDes={creativeEyeData}></CreativeEye>
+            {/* experience */}
+            <Experience></Experience>
         </div>
     );
 };

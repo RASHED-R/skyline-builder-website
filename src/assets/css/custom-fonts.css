@@ -75,3 +75,11 @@ p,
     letter-spacing: 6.4px;
     text-transform: uppercase;
 }
+
+.color-p-2 {
+    color: #180B81;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    line-height: 28px;
+}

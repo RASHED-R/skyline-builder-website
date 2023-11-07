@@ -1,0 +1,37 @@
+/* ***Responsive media query*** */
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1500px) and (max-width:1920px) {}
+
+@media (min-width: 1400px) and (max-width:1500px) {}
+
+@media (min-width: 1200px) and (max-width:1399.99px) {}
+
+@media only screen and (min-width: 1200px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.99px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Extra small devices (portrait phones, less than 768px) */
+
+
+@media (max-width: 767.98px) {
+    .header-menu-wrapper a {
+        padding: 16px 0px;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 481px) and (max-width: 576px) {}
+
+/* X-Small devices (360px to 480) */
+@media (max-width: 480px) {}
+
+@media (max-width: 418px) {}
+
+/* XX-Small devices (less then 359px) */
+@media only screen and (max-width: 359.98px) {}

@@ -2,8 +2,35 @@
     padding: 120px 0px;
 }
 
+.ptpb60 {
+    padding: 60px 0px;
+}
 
 /* margin */
+.mtmb120 {
+    margin: 120px 0;
+}
+
+.mt24 {
+    margin-top: 24px;
+}
+
+.mb24 {
+    margin-bottom: 24px;
+}
+
 .mt40 {
     margin-top: 40px;
+}
+
+.mt64 {
+    margin-top: 64px;
+}
+
+.mb64 {
+    margin-bottom: 64px;
+}
+
+.mr32 {
+    margin-right: 32px;
 }

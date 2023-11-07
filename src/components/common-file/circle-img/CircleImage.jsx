@@ -4,7 +4,7 @@ const CircleImage = () => {
     const [rotatedText, setRotatedText] = useState('');
 
     useEffect(() => {
-        const originalText = 'Skyline - Builder - Limited -';
+        const originalText = 'Skyline - Builders - Limited. ';
         const transformedText = originalText
             .split('')
             .map((char, i) => (
