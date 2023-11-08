@@ -7,6 +7,8 @@ import WorkProcess from "../work-process/WorkProcess";
 import OurArchitecture from "../our-architecture/OurArchitecture";
 import CreativeEye from "../common-file/creative-eye/CreativeEye";
 import Experience from "../common-file/experience/Experience";
+import Clients from "../common-file/clients/Clients";
+import Testimonial from "../common-file/testimonial/Testimonial";
 
 const Home = () => {
     const [index, setIndex] = useState(0);
@@ -74,6 +76,25 @@ const Home = () => {
         subTitle: 'new adventure',
         description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         image: '/src/assets/image/home-carousel/1.png',
+        cards: [
+            {
+                image: '/src/assets/image/service/1.png',
+                imageTitle: 'Interior'
+            },
+            {
+                image: '/src/assets/image/service/1.png',
+                imageTitle: 'Exterior',
+            },
+            {
+                image: '/src/assets/image/service/1.png',
+                imageTitle: 'Architecture'
+            },
+        ]
+    };
+    const testimonialData = {
+        title: 'title',
+        subTitle: 'new adventure',
+        underLineHeading: 'Experience',
         cards: [
             {
                 image: '/src/assets/image/service/1.png',
@@ -178,6 +199,10 @@ const Home = () => {
             <CreativeEye cardsItemsDes={creativeEyeData}></CreativeEye>
             {/* experience */}
             <Experience></Experience>
+            {/* clients */}
+            <Clients></Clients>
+            {/* testimonial */}
+            <Testimonial cardsItemsDes={testimonialData}></Testimonial>
         </div>
     );
 };

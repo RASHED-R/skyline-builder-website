@@ -23,29 +23,8 @@ function Header() {
 
     return (
         <>
-            {/* <Navbar sticky="top" id='main-header' collapseOnSelect expand="lg" className="header-bg">
-                <Container>
-                    <div className="col-lg-8 header-menu-wrapper">
-                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                        <Navbar.Collapse id="responsive-navbar-nav " className='justify-content-center'>
-                            <Nav className=" nab-bar-link d-flex gap-5 ">
-                                <Link to='/about-us'><p>About Us</p> </Link>
-                                <Link to='/Our-service'><p>Our Service</p> </Link>
-                                <Link to='/portfolio'><p> Portfolio</p></Link>
-                                <Link to='/blog'><p>Blog</p> </Link>
-                                <Link to='/contact-us'><p>Contact Us</p> </Link>
-                            </Nav>
 
-                        </Navbar.Collapse>
-                    </div>
-                    <div className="col-lg-2 d-none d-lg-block ">
-                        
-                    </div>
-
-                </Container>
-            </Navbar> */}
-
-            <Navbar sticky="top" id='main-header' collapseOnSelect expand="lg" className="header-bg">
+            <Navbar id='main-header' collapseOnSelect expand="lg" className="header-bg" >
                 <Container>
                     <Navbar.Brand href="#home" className="company-logo">
                         <Link to="/home"><img src="/src/assets/image/company-logo/Final-logo2.png" alt="" /></Link>

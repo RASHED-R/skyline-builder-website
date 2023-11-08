@@ -1,16 +1,36 @@
 import React, { useEffect } from 'react';
-
+let isSticky = false;
 const BackToTop = () => {
+
+
     useEffect(() => {
         const handleScroll = () => {
+            const mainHeader = document.getElementById("main-header");
             const scrollButton = document.getElementById('backTop');
-            const mainHeader = document.getElementById('main-header');
-            if (window.scrollY >= 200) {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
                 scrollButton.style.display = 'block';
                 mainHeader.style.boxShadow = '0px -10px 26px 0px rgba(0, 0, 0, 0.5)';
+                mainHeader.classList.add('sticky-top');
+
+                // if (!isSticky) {
+                //     isSticky = true;
+                //     mainHeader.style.top = "-250px";
+                //     setTimeout(() => {
+                //         mainHeader.style.position = "fixed";
+                //         mainHeader.style.top = "0px";
+                //     }, 200);
+                // }
+
+
+
             } else {
                 scrollButton.style.display = 'none';
                 mainHeader.style.boxShadow = 'none';
+                mainHeader.classList.remove('sticky-top');
+                // mainHeader.style.top = "0px";
+
+                // isSticky = false;
+                // mainHeader.style.position = "relative";
             }
         };
 

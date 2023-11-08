@@ -698,11 +698,14 @@ hr.hr {
 } */
 
 /* end our service  */
-
-/*start our architecture  */
-.our-architect-div {
+/* div bg */
+.our-architect-div,
+.clients-div {
     background-color: var(--header-bg);
 }
+
+/* div bg */
+/*start our architecture  */
 
 .architect-img {
     height: 330px;
@@ -828,7 +831,7 @@ hr.hr {
     text-decoration: underline;
     text-decoration-color: var(--brand-color);
     text-decoration-thickness: 4px;
-    text-underline-offset: 8px;
+    text-underline-offset: 14px;
 }
 
 /* back to top */
@@ -1076,4 +1079,42 @@ button.circle-play-btn {
 svg.play-btn-svg {
     min-height: 30%;
     max-width: 60%;
+}
+
+/* clients carousel */
+.clients-carousel .item {
+    padding: 24px;
+    height: 120px;
+}
+
+/* #main-header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    z-index: 9999;
+} */
+#main-header {
+    transition: .7s all;
+    position: static;
+}
+
+
+#main-header.sticky-top {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    animation-duration: .7s;
+    animation-name: smooth;
+}
+
+@keyframes smooth {
+    from {
+        top: -10%;
+    }
+
+    to {
+        top: 0%;
+    }
 }

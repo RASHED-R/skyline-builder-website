@@ -51,7 +51,7 @@ const Layout = () => {
 
     const copyrightText = 'Infinity Infotech Ltd.';
 
-    // footer 
+    // header & footer with layout 
     const location = useLocation();
     const hideHeaderFooter = ['/contact-us'];
     const path = location.pathname
