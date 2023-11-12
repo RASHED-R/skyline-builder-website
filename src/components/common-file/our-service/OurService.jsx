@@ -10,7 +10,7 @@ const OurService = ({ cardsItemsDes }) => {
     };
     return (
 
-        <section className="our-service-div ptpb-120" style={backgroundStyle}>
+        <section className="our-service-div ptpb120" style={backgroundStyle}>
             <div className="container">
                 <div className="heading">
                     <div className="row align-items-end">

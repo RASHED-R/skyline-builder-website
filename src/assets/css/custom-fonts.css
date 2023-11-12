@@ -16,6 +16,13 @@ h6 {
     margin-bottom: 0;
 }
 
+.h3 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+}
+
 h1 {
 
     font-family: 'Playfair Display', serif;

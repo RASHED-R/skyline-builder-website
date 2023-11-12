@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 const CommonContactUs = ({ cardsItemsDes }) => {
     return (
-        <div className='common-contact-us-div ptpb-120 backgroundImage '>
+        <div className='common-contact-us-div ptpb120 backgroundImage '>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-6">

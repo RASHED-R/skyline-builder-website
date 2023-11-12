@@ -5,7 +5,7 @@ import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Testimonial = ({ cardsItemsDes }) => {
     return (
-        <div className='testimonial-div ptpb-120 backgroundImage '>
+        <div className='testimonial-div ptpb120 backgroundImage '>
             <CircleImage></CircleImage>
             <div className="container">
                 <div className="row justify-content-center">

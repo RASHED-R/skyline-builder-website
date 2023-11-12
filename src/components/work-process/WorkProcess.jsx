@@ -14,7 +14,7 @@ const WorkProcess = () => {
     }]
     return (
 
-        <section className="work-process-section ptpb-120">
+        <section className="work-process-section ptpb120">
             <div className="container">
                 <div className="row justify-content-center text-center">
                     <div className="col-lg-6">

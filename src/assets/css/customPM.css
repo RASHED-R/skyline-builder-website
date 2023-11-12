@@ -1,4 +1,4 @@
-.ptpb-120 {
+.ptpb120 {
     padding: 120px 0px;
 }
 
@@ -45,4 +45,8 @@
 
 .mb16 {
     margin-bottom: 16px;
+}
+
+.mt80 {
+    margin-top: 80px;
 }

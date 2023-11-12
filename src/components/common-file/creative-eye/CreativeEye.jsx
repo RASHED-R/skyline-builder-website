@@ -12,7 +12,7 @@ const CreativeEye = ({ cardsItemsDes }) => {
 
     };
     return (
-        <section className="creative-eye-div ptpb-120" style={backgroundStyle}>
+        <section className="creative-eye-div ptpb120" style={backgroundStyle}>
             <div className="container">
                 <div className="heading">
                     <div className="row align-items-end">

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 const Blog = ({ cardsItemsDes }) => {
     return (
-        <div className='blog-div ptpb-120 '>
+        <div className='blog-div ptpb120 '>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-8">

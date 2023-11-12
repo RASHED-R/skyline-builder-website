@@ -13,6 +13,7 @@ import CommonContactUs from "../common-contact-us/CommonContactUs";
 import Blog from "../common-file/blog/Blog";
 import { Link } from "react-router-dom";
 import CommunityGiveback from "../community-giveback/communityGiveback";
+import { faL } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
     const [index, setIndex] = useState(0);
@@ -158,6 +159,30 @@ const Home = () => {
 
         ]
     };
+    const options = {
+        items: 6,
+        stagePadding: 0,
+        loop: true,
+        margin: 10,
+        nav: false,
+        autoplay: true,
+        slideTransition: 'linear',
+        autoplayTimeout: 3000,
+        autoplaySpeed: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 3,
+            },
+            700: {
+                items: 3,
+            },
+            992: {
+                items: 6,
+
+            }
+        },
+    };
     const cardsItemCarouselData = {
         subHeading: 'EXPERIENCE',
         heading: 'Create Digital ',
@@ -202,26 +227,7 @@ const Home = () => {
 
         ]
     }
-    const options = {
-        margin: 30,
-        responsiveClass: true,
-        nav: false,
-        dots: true,
-        autoplay: true,
-        smartSpeed: 1000,
-        responsive: {
-            0: {
-                items: 3,
-            },
-            700: {
-                items: 3,
-            },
-            992: {
-                items: 6,
 
-            }
-        },
-    };
     // blog
     const blogItemCarouselData = {
         subHeading: 'EXPERIENCE',
@@ -280,7 +286,7 @@ const Home = () => {
     return (
         <div>
             <section className="hero-section" style={{ backgroundImage: `url(${background})` }}>
-                <div className="container-fluid">
+                <div className="hero-section-wrapper w-100 ">
                     <div className="row g-0 justify-content-center align-items-center common-hero">
                         <div className="col-lg-6">
                             <div className="hero-left">

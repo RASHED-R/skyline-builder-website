@@ -11,7 +11,7 @@ import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 const CommunityGiveback = ({ cardsItemsDes, blogOptions }) => {
 
     return (
-        <div className='community-giveback-div ptpb64'>
+        <div className='community-giveback-div ptpb60'>
             <div className="container">
                 <div className="heading">
                     <div className="row justify-content-center text-center">
@@ -27,9 +27,10 @@ const CommunityGiveback = ({ cardsItemsDes, blogOptions }) => {
                             <div key={index} className='item image-container'>
                                 <img className="community-giveback-image" src={item.imageUrl} alt="" />
                                 <div className="overlay">
-                                    <div className="community-butn">
-                                        <Link className='' to={"#"}> hello <span><FontAwesomeIcon icon={faArrowRightLong} /></span></Link>
-                                    </div>
+
+                                </div>
+                                <div className="community-butn">
+                                    <Link className='community-more-btn' to={"#"}> Collecting Fund <span><FontAwesomeIcon icon={faArrowRightLong} /></span></Link>
                                 </div>
                             </div>
                         ))}

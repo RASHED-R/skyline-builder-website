@@ -709,7 +709,8 @@ hr.hr {
 /* div bg */
 .our-architect-div,
 .clients-div,
-.common-contact-us-div {
+.common-contact-us-div,
+.whoWeAre-section-div {
     background-color: var(--header-bg);
 }
 
@@ -857,14 +858,15 @@ hr.hr {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 30px;
-    height: 30px;
-    background-color: #262626;
+    width: 40px;
+    height: 40px;
+    background-color: var(--brand-color);
     border-radius: 5px;
     cursor: pointer;
     display: none;
     z-index: 9999;
-
+    line-height: 30px;
+    text-align: center;
 }
 
 .back-to-top span {
@@ -872,8 +874,6 @@ hr.hr {
     font-size: 36px;
     transform: rotate(90deg);
     display: inline-block;
-    margin-left: 10px;
-    margin-top: 8px;
     width: 100%;
     height: 100%;
 }
@@ -1269,10 +1269,11 @@ svg.play-btn-svg {
 .image-container:hover .community-butn {
     display: block;
     opacity: 1;
-    bottom: 5%;
+    bottom: 100px;
+    /* transition: .1s ease-out; */
 }
 
-.community-giveback-div .text {
+/* .community-giveback-div .text {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -1283,14 +1284,121 @@ svg.play-btn-svg {
     transform: translate(-50%, -50%);
     white-space: nowrap;
     z-index: 2;
-}
+} */
 
 .community-butn {
     position: absolute;
-    bottom: -10%;
+    bottom: 0px;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    display: none;
     transition: .5s ease-in-out;
+}
+
+.community-more-btn {
+    padding: 24px 32px;
+    background-color: white;
+}
+
+.community-more-btn {
+    padding: 16px 0px 16px 12px;
+    background-color: white;
+}
+
+.community-more-btn span {
+    padding: 16px 12px;
+    background-color: var(--brand-color);
+    color: #fff;
+}
+
+/* banner */
+.banner-right {
+    min-height: 395px;
+    max-width: 100%;
+}
+
+.common-readMore {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--gray-color);
+    color: #141414;
+}
+
+/* who we are */
+
+.whoWeAre-right {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.whoWeAre-left {
+    position: relative;
+}
+
+.who-we-are-overlay-text {
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 6px 70px;
+    background-color: var(--brand-color);
+    color: white;
+}
+
+/* explore skyline builders */
+.explore-skyline-img .overlay {
+    background-image: url(/src/assets/image/explore-skyline-builders/bgHover.png);
+    background-color: #000;
+}
+
+.explore-skyline-builder-div .community-butn {
+    position: absolute;
+    bottom: 0px;
+    padding: 0px 36px;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    color: #FFF;
+    left: 0;
+    transform: translate(0);
+}
+
+.explore-skyline-builder-div .image-container:hover .community-butn {
+    display: block;
+    opacity: 1;
+    bottom: 50px;
+    /* transition: .1s ease-out; */
+}
+
+.explore-skyline-builder-div .image-container:hover .card-num {
+    color: white;
+    padding-left: 24px;
+    position: absolute;
+    left: 0px;
+    opacity: 1;
+}
+
+.card-num {
+    color: white;
+    position: absolute;
+    padding-left: 24px;
+    left: -120px;
+    opacity: 0;
+    transition: .5s all;
+}
+
+.explore-hr {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 32px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.explore-skyline-img.image-container {
+    height: 400px;
+    width: 100%;
 }
