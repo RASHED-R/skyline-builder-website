@@ -14,14 +14,16 @@ const CircleImage = () => {
     }, []);
 
     return (
-        <div className="circle">
-            <div className="logo"></div>
-            <div className="text">
-                <p>
-                    {rotatedText}
-                </p>
+        <div className="circle-work-process">
+            <div className="circle">
+                <div className="logo"></div>
+                <div className="text">
+                    <p>
+                        {rotatedText}
+                    </p>
+                </div>
             </div>
-        </div>
+        </div >
     );
 };
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = ({ companyData, sections, contactData, copyrightText }) => {
     return (
@@ -26,7 +27,7 @@ const Footer = ({ companyData, sections, contactData, copyrightText }) => {
                                 </div>
                                 <ul className='mt24 d-flex flex-column gap-2'>
                                     {section.links.map((link, linkIndex) => (
-                                        <li className='footer-list-item' key={linkIndex}><a href={link.url}>{link.text}</a></li>
+                                        <li className='footer-list-item' key={linkIndex}><Link to={link.url}>{link.text}</Link></li>
                                     ))}
                                 </ul>
                             </div>

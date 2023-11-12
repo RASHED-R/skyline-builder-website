@@ -35,6 +35,14 @@ p {
     border-color: transparent;
 }
 
+/* .backgroundImage */
+.backgroundImage {
+    background-image: url(/src/assets/image/background-image/bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
 /* header-search css */
 .magnifying-glass-btn {
     background-color: transparent;
@@ -700,7 +708,8 @@ hr.hr {
 /* end our service  */
 /* div bg */
 .our-architect-div,
-.clients-div {
+.clients-div,
+.common-contact-us-div {
     background-color: var(--header-bg);
 }
 
@@ -1117,4 +1126,171 @@ svg.play-btn-svg {
     to {
         top: 0%;
     }
+}
+
+/* testimonial section */
+.clients-img-div {
+    height: 150px;
+    width: 150px;
+    line-height: 150px;
+    margin: 0 auto;
+}
+
+.testimonialCarousel .carousel-item.active {
+    display: flex !important;
+}
+
+.testimonial-div .hero-right .carousel-indicators {
+    justify-content: end;
+}
+
+.testimonial-designation {
+    color: #f37b20;
+    font-size: 16px;
+}
+
+.testimonial-div {
+    position: relative;
+}
+
+.testimonial-div .circle-work-process {
+    top: 200px;
+    right: 100px;
+}
+
+
+
+.testimonial-div.backgroundImage {
+    background-position-x: -200px;
+}
+
+.testimonial-div .fa-quote-left {
+    position: absolute;
+    top: 0;
+    font-size: 100px;
+    left: -100px;
+    color: gray;
+    opacity: .2;
+}
+
+/* common contact us */
+.contact-us-btn {
+    border: 1px solid var(--brand-color);
+    padding: 8px 32px;
+    border-radius: 8px;
+    color: var(--brand-color);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* blog section */
+.hero-right.blog-card {
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .20);
+    background-color: white;
+}
+
+.blog-img-div {
+    height: 250px;
+    width: 100%;
+}
+
+.date-text,
+.admin-text {
+    font-family: Open Sans;
+    font-size: 14.509px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.29px;
+    color: #595959;
+}
+
+.admin-text {
+    color: var(--brand-color);
+    font-style: italic;
+}
+
+.read-more-btn {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 8px;
+    padding: 8px 32px 8px 0;
+    color: #141414;
+    font-weight: 600;
+}
+
+.blog-read-more-btn {
+    display: inherit;
+}
+
+.read-more-btn .fa-arrow-right-long {
+    margin-top: 4px;
+    transition: .3s all;
+    color: var(--brand-color);
+}
+
+.read-more-btn:hover .fa-arrow-right-long {
+    padding-left: 10px;
+}
+
+/* community giveBack */
+.community-giveback-div .clients-carousel .item {
+    height: 420px;
+    width: 100%;
+    padding: 0;
+}
+
+.image-container {
+    position: relative;
+}
+
+.community-giveback-image {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0000008f;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.image-container:hover .overlay {
+    width: 100%;
+}
+
+.image-container:hover .community-butn {
+    display: block;
+    opacity: 1;
+    bottom: 5%;
+}
+
+.community-giveback-div .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.community-butn {
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    display: none;
+    transition: .5s ease-in-out;
 }

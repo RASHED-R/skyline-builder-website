@@ -3,7 +3,7 @@ import BackToTop from '../common-file/back-to-top/BackToTop';
 import Footer from './Footer';
 import Header from './header/Header';
 import MainContent from './MainContent';
-import SideSocialIcon from './sideSocialIcon';
+import SideSocialIcon from './SideSocialIcon';
 import { useLocation } from 'react-router-dom';
 
 const Layout = () => {

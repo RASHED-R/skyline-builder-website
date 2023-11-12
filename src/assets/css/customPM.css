@@ -6,6 +6,10 @@
     padding: 60px 0px;
 }
 
+.p24 {
+    padding: 24px;
+}
+
 /* margin */
 .mtmb120 {
     margin: 120px 0;
@@ -33,4 +37,12 @@
 
 .mr32 {
     margin-right: 32px;
+}
+
+.mt16 {
+    margin-top: 16px;
+}
+
+.mb16 {
+    margin-bottom: 16px;
 }

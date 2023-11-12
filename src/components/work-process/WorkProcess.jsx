@@ -2,6 +2,7 @@ import React from 'react';
 import CircleImage from '../common-file/circle-img/CircleImage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 const WorkProcess = () => {
     const images = [{
         image: "/src/assets/image/work-process/1.png"
@@ -20,9 +21,9 @@ const WorkProcess = () => {
                         <div className="heading">
                             <p className='color-p '>The process</p>
                             <h2>How We <span className='under-line'> Work?</span></h2>
-                            <div className="circle-work-process">
-                                <CircleImage></CircleImage>
-                            </div>
+
+                            <CircleImage></CircleImage>
+
                         </div>
                     </div>
                 </div>
@@ -42,7 +43,7 @@ const WorkProcess = () => {
                                                     sem quam semper libero</p>
                                                 <hr className='hr' />
                                                 <div>
-                                                    <a href="#"><FontAwesomeIcon icon={faArrowRightLong} /></a>
+                                                    <Link to="#"><FontAwesomeIcon icon={faArrowRightLong} /></Link>
                                                 </div>
                                             </div>
                                         </div>

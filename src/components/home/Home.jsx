@@ -9,6 +9,10 @@ import CreativeEye from "../common-file/creative-eye/CreativeEye";
 import Experience from "../common-file/experience/Experience";
 import Clients from "../common-file/clients/Clients";
 import Testimonial from "../common-file/testimonial/Testimonial";
+import CommonContactUs from "../common-contact-us/CommonContactUs";
+import Blog from "../common-file/blog/Blog";
+import { Link } from "react-router-dom";
+import CommunityGiveback from "../community-giveback/communityGiveback";
 
 const Home = () => {
     const [index, setIndex] = useState(0);
@@ -92,44 +96,205 @@ const Home = () => {
         ]
     };
     const testimonialData = {
-        title: 'title',
-        subTitle: 'new adventure',
-        underLineHeading: 'Experience',
-        cards: [
+        title: 'What Our ',
+        subTitle: 'Testimonials',
+        underLineHeading: 'customers say',
+        items: [
             {
-                image: '/src/assets/image/service/1.png',
-                imageTitle: 'Interior'
+                image: '/src/assets/image/testimonial-image/1.png',
+                imageTitle: 'Gabriel Jackson-',
+                imageDesignation: "CEO",
+                description: "Lorem ipsum dolor sit amet, consecter adipiscing elit. Fermentum malesuada quisque porttitor duis aliquam id."
             },
             {
-                image: '/src/assets/image/service/1.png',
-                imageTitle: 'Exterior',
+                image: '/src/assets/image/testimonial-image/1.png',
+                imageTitle: 'Exterior-',
+                imageDesignation: "CEO",
+                description: "Lorem ipsum dolor sit amet, consecter adipiscing elit. Fermentum malesuada quisque porttitor duis aliquam id.Lorem ipsum dolor sit amet, consecter adipiscing elit. Fermentum malesuada quisque porttitor duis aliquam id."
             },
             {
-                image: '/src/assets/image/service/1.png',
-                imageTitle: 'Architecture'
+                image: '/src/assets/image/testimonial-image/1.png',
+                imageTitle: 'Architecture-',
+                imageDesignation: "CEO",
+                description: "Lorem ipsum dolor sit amet, consecter adipiscing elit. Fermentum malesuada quisque porttitor duis aliquam id."
             },
         ]
     };
+    const commonContactUsData = {
+        title: 'Free ',
+        subTitle: 'Contact us',
+        underLineHeading: 'Consultation',
+        description: "Lorem ipsum dolor sit amet, consecter adipiscing elit. Fermentum malesuada quisque porttitor duis aliquam id.",
+    };
+    const blogData = {
+        title: 'Read all our  ',
+        subTitle: 'News and blogs',
+        underLineHeading: 'latest Articles',
+        items: [
+            {
+                title: "Bachelor of Architecture",
+                image: '/src/assets/image/blog-image/1.png',
+                imageTitle: 'Gabriel Jackson-',
+                date: "12/12/12- ",
+                admin: "abrakadara",
+                description: "Lorem ipsum dolor sit amet, consecter adipiscing elit. Fermentum malesuada quisque porttitor duis aliquam id."
+            },
+            {
+                title: "Apartment Therapy",
+                image: '/src/assets/image/blog-image/2.png',
+                imageTitle: 'Gabriel Jackson-',
+                date: "12/12/12- ",
+                admin: "abrakadara",
+                description: "Lorem ipsum dolor sit amet, consecter adipiscing elit. Fermentum malesuada quisque porttitor duis aliquam id."
+            },
+            {
+                title: "Apartment Therapy",
+                image: '/src/assets/image/blog-image/3.png',
+                imageTitle: 'Gabriel Jackson-',
+                date: "12/12/12- ",
+                admin: "abrakadara",
+                description: "Lorem ipsum dolor sit amet, consecter adipiscing elit. Fermentum malesuada quisque porttitor duis aliquam id."
+            },
 
+        ]
+    };
+    const cardsItemCarouselData = {
+        subHeading: 'EXPERIENCE',
+        heading: 'Create Digital ',
+        underLineHeading: 'Experience',
+        items: [
+            {
+                imageUrl: '/src/assets/image/clients-image/1.png',
+            },
+            {
+                imageUrl: '/src/assets/image/clients-image/2.png',
+            },
+            {
+                imageUrl: '/src/assets/image/clients-image/3.png',
+            },
+            {
+                imageUrl: '/src/assets/image/clients-image/4.png',
+            },
+            {
+                imageUrl: '/src/assets/image/clients-image/5.png',
+            },
+            {
+                imageUrl: '/src/assets/image/clients-image/6.png',
+            },
+            {
+                imageUrl: '/src/assets/image/clients-image/1.png',
+            },
+            {
+                imageUrl: '/src/assets/image/clients-image/2.png',
+            },
+            {
+                imageUrl: '/src/assets/image/clients-image/3.png',
+            },
+            {
+                imageUrl: '/src/assets/image/clients-image/4.png',
+            },
+            {
+                imageUrl: '/src/assets/image/clients-image/5.png',
+            },
+            {
+                imageUrl: '/src/assets/image/clients-image/6.png',
+            },
 
+        ]
+    }
+    const options = {
+        margin: 30,
+        responsiveClass: true,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        smartSpeed: 1000,
+        responsive: {
+            0: {
+                items: 3,
+            },
+            700: {
+                items: 3,
+            },
+            992: {
+                items: 6,
+
+            }
+        },
+    };
+    // blog
+    const blogItemCarouselData = {
+        subHeading: 'EXPERIENCE',
+        heading: 'Create Digital ',
+        underLineHeading: 'Experience',
+        items: [
+            {
+                imageUrl: '/src/assets/image/community-giveback/1.png',
+            },
+            {
+                imageUrl: '/src/assets/image/community-giveback/2.png',
+            },
+            {
+                imageUrl: '/src/assets/image/community-giveback/3.png',
+            },
+            {
+                imageUrl: '/src/assets/image/community-giveback/1.png',
+            },
+            {
+                imageUrl: '/src/assets/image/community-giveback/2.png',
+            },
+            {
+                imageUrl: '/src/assets/image/community-giveback/3.png',
+            },
+            {
+                imageUrl: '/src/assets/image/community-giveback/1.png',
+            },
+            {
+                imageUrl: '/src/assets/image/community-giveback/2.png',
+            },
+            {
+                imageUrl: '/src/assets/image/community-giveback/3.png',
+            },
+        ]
+    }
+    const blogOptions = {
+        margin: 30,
+        responsiveClass: true,
+        nav: false,
+        dots: true,
+        autoplay: false,
+        smartSpeed: 1000,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            700: {
+                items: 1,
+            },
+            992: {
+                items: 3,
+
+            }
+        },
+    };
     return (
         <div>
             <section className="hero-section" style={{ backgroundImage: `url(${background})` }}>
                 <div className="container-fluid">
-                    <div className="row justify-content-center align-items-center common-hero">
+                    <div className="row g-0 justify-content-center align-items-center common-hero">
                         <div className="col-lg-6">
                             <div className="hero-left">
                                 <p className="color-p">integrated way of architecture</p>
                                 <h1>The new level of evolution</h1>
                                 <p>Lorem ipsum dolor sit amet, consecter adipiscing elit. Fermentum malesuada quisque porttitor duis aliquam id.</p>
                                 <div className="explore-butn">
-                                    <a href="#" className="exploer-btn">Explore</a>
+                                    <Link to="#" className="exploer-btn">Explore</Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="hero-right">
-                                <div id="carouselExampleCaptions" className="carousel slide">
+                                <div id="carouselExampleCaptions" className="carousel slide" data-bs-touch="true">
                                     <div className="carousel-indicators">
                                         <div className="text-indicators">
                                             <p className="color-p">Residential</p>
@@ -200,9 +365,15 @@ const Home = () => {
             {/* experience */}
             <Experience></Experience>
             {/* clients */}
-            <Clients></Clients>
+            <Clients options={options} cardsItemsDes={cardsItemCarouselData} ></Clients>
             {/* testimonial */}
             <Testimonial cardsItemsDes={testimonialData}></Testimonial>
+            {/* common contact us */}
+            <CommonContactUs cardsItemsDes={commonContactUsData}></CommonContactUs>
+            {/* blog section */}
+            <Blog cardsItemsDes={blogData}></Blog>
+            {/* community givebackk */}
+            <CommunityGiveback blogOptions={blogOptions} cardsItemsDes={blogItemCarouselData}></CommunityGiveback>
         </div>
     );
 };
