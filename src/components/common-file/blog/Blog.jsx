@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 const Blog = ({ cardsItemsDes }) => {
     return (
-        <div className='blog-div ptpb120 '>
+        <div className='blog-div ptpb-120 '>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-8">
@@ -20,11 +20,11 @@ const Blog = ({ cardsItemsDes }) => {
                         </div>
                     </div>
                 </div>
-                <div className="blog-card-wrapper mt64">
+                <div className="blog-card-wrapper mt-64">
                     <div className="row">
                         {cardsItemsDes?.items?.map((item, index) => (
                             <div className="col-lg-4" key={index}>
-                                <div className="hero-right  blog-card p24 h-100">
+                                <div className="hero-right  blog-card p-24 h-100">
                                     <div className="blog-img-div">
                                         <img src={item?.image} alt="" />
                                     </div>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const WhoWeAre = ({ whoWeAreData }) => {
     return (
-        <section className="whoWeAre-section-div ptpb120">
+        <section className="whoWeAre-section-div ptpb-120">
             <div className="whoWeAre-section-wrapper w-100 ">
                 <div className="container">
                     <div className="row justify-content-between  common-whoWeAre">
@@ -21,7 +21,7 @@ const WhoWeAre = ({ whoWeAreData }) => {
                                 <p className="color-p">{whoWeAreData.subHeading}</p>
                                 <h2 className='h3'>{whoWeAreData.heading} <span className='under-line'>{whoWeAreData.underLineHeading}</span></h2>
 
-                                <p className='mt24'>{whoWeAreData.para.substring(0, 450)}</p>
+                                <p className='mt-24'>{whoWeAreData.para.substring(0, 450)}</p>
                                 <div><Link to={'#'} className='common-readMore'> Read More</Link></div>
 
                             </div>

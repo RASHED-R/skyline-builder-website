@@ -80,7 +80,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 const Clients = ({ cardsItemsDes, options }) => {
 
     return (
-        <div className='clients-div ptpb120'>
+        <div className='clients-div ptpb-120'>
             <div className="container">
                 <div className="heading">
                     <div className="row align-items-end">

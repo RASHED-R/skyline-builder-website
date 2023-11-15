@@ -1,7 +1,7 @@
 import React from 'react';
 const BannerSection = ({ bannerData }) => {
     return (
-        <section className="banner-section">
+        <section className="banner-section backgroundImage">
             <div className="banner-section-wrapper w-100 ">
                 <div className="row g-0 justify-content-center align-items-center common-banner">
                     <div className="col-lg-6">

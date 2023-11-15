@@ -31,11 +31,34 @@ function Header() {
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-end'>
-                        <Nav className=" header-menu-wrapper nab-bar-link d-flex gap-lg-5 gap-2 m-auto">
-                            <Link to='/about-us'><p>About Us</p> </Link>
+                        <Nav className=" header-menu-wrapper nab-bar-link d-flex gap-lg-5 gap-2 m-auto main-menu nav position-relative">
+                            <Link className=' has-submenu category' to='#'><p>About Us</p>
+                                <ul className="submenu-nav">
+                                    <li className="has-submenu"><Link to='/about-us'><p>About Us</p> </Link>
+                                    </li>
+                                    <li className="has-submenu"><Link to='/our-team'><p>Our Team</p> </Link>
+                                    </li>
+                                    <li className="has-submenu"><Link to='/portfolio'><p> Portfolio</p>
+
+                                        <ul className="submenu-nav">
+                                            <li className="has-submenu"><Link to='/about-us'><p>About Us</p> </Link>
+                                            </li>
+                                            <li className="has-submenu"><Link to='/our-team'><p>Our Team</p> </Link>
+                                            </li>
+                                            <li className="has-submenu"><Link to='/portfolio'><p> Portfolio</p></Link>
+                                            </li>
+                                            <li className="has-submenu"><Link to='/blog'><p>Blog</p> </Link>
+                                            </li>
+                                        </ul></Link>
+                                    </li>
+                                    <li className="has-submenu"><Link to='/blog'><p>Blog</p> </Link>
+                                    </li>
+                                </ul>
+                            </Link>
                             <Link to='/Our-service'><p>Our Service</p> </Link>
                             <Link to='/portfolio'><p> Portfolio</p></Link>
                             <Link to='/blog'><p>Blog</p> </Link>
+
                             <Link to='/contact-us'><p>Contact Us</p> </Link>
                         </Nav>
                         <Nav>
@@ -78,3 +101,4 @@ function Header() {
     );
 }
 export default Header;
+

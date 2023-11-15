@@ -9,7 +9,7 @@ import CreativeEye from "../common-file/creative-eye/CreativeEye";
 import Experience from "../common-file/experience/Experience";
 import Clients from "../common-file/clients/Clients";
 import Testimonial from "../common-file/testimonial/Testimonial";
-import CommonContactUs from "../common-contact-us/CommonContactUs";
+import CommonContactUs from "../common-file/common-contact-us/CommonContactUs";
 import Blog from "../common-file/blog/Blog";
 import { Link } from "react-router-dom";
 import CommunityGiveback from "../community-giveback/communityGiveback";
@@ -166,7 +166,7 @@ const Home = () => {
         margin: 10,
         nav: false,
         autoplay: true,
-        slideTransition: 'linear',
+        slidetransition: 'linear',
         autoplayTimeout: 3000,
         autoplaySpeed: 3000,
         autoplayHoverPause: true,

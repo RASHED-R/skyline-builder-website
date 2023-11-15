@@ -7,6 +7,7 @@ import OurService from "../our-service/OurService";
 import Blog from "../blog/Blog";
 import Portfolio from "../portfolio/Portfolio";
 import ContactUs from "../contact-us/ContactUs";
+import OurTeam from "../our-team-main/OurTeam";
 const RouteList = () => {
     return (
         <Routes>
@@ -17,6 +18,7 @@ const RouteList = () => {
                 <Route path="jab" element={<>heloo jab</>} />
             </Route>
             <Route path="/our-service" element={<OurService></OurService>} />
+            <Route path="/our-team" element={<OurTeam></OurTeam>} />
             <Route path="/blog" element={<Blog></Blog>} />
             <Route path="/portfolio" element={<Portfolio></Portfolio>} />
             <Route path="/contact-us" element={<ContactUs></ContactUs>} />

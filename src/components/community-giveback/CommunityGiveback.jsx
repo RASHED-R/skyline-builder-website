@@ -11,7 +11,7 @@ import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 const CommunityGiveback = ({ cardsItemsDes, blogOptions }) => {
 
     return (
-        <div className='community-giveback-div ptpb60'>
+        <div className='community-giveback-div ptpb-60'>
             <div className="container">
                 <div className="heading">
                     <div className="row justify-content-center text-center">

@@ -5,7 +5,7 @@ import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Testimonial = ({ cardsItemsDes }) => {
     return (
-        <div className='testimonial-div ptpb120 backgroundImage '>
+        <div className='testimonial-div ptpb-120 backgroundImage '>
             <CircleImage></CircleImage>
             <div className="container">
                 <div className="row justify-content-center">
@@ -27,7 +27,7 @@ const Testimonial = ({ cardsItemsDes }) => {
                                         <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3">03</button>
                                     </div>
                                 </div>
-                                <div className="carousel-inner mt64">
+                                <div className="carousel-inner mt-64">
                                     {cardsItemsDes?.items?.map((item, index) => (
                                         <div key={index} className={`carousel-item  ${index === 0 ? 'active' : ''}`}>
                                             <div className='row align-items-center'>

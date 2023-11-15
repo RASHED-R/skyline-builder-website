@@ -2,7 +2,7 @@ import React from 'react';
 
 const ExploreSkylineBuilders = ({ exploreSkylineBuilders }) => {
     return (
-        <section className='explore-skyline-builder-div ptpb60'>
+        <section className='explore-skyline-builder-div ptpb-60'>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-8">
@@ -12,9 +12,9 @@ const ExploreSkylineBuilders = ({ exploreSkylineBuilders }) => {
                         </div>
                     </div>
                 </div>
-                <div className="row justify-content-between mt64">
+                <div className="row justify-content-between mt-64">
                     {exploreSkylineBuilders?.cards?.map((card, index) => (
-                        <div className={`col-lg-4 col-md-2  ${index == 1 ? ' mt40' : index == 2 ? ' mt80' : ''}`} key={index}>
+                        <div className={`col-lg-4 col-md-2  ${index == 1 ? ' mt-40' : index == 2 ? ' mt-80' : ''}`} key={index}>
                             <div className="card explore-skyline-card">
                                 <div className="explore-skyline-img image-container">
                                     <img src={card?.image} className="card-img-top" alt={card.alt} />

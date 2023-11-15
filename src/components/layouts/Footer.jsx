@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Footer = ({ companyData, sections, contactData, copyrightText }) => {
     return (
         <div className="footer-div">
-            <div className="footer-wrapper ptpb60 ">
+            <div className="footer-wrapper ptpb-60 ">
                 <div className="container">
                     <div className="row justify-content-between">
                         <div className="col-lg-3">
@@ -13,7 +13,7 @@ const Footer = ({ companyData, sections, contactData, copyrightText }) => {
                                     <img src={companyData.logo} alt={companyData.name} />
 
                                 </div>
-                                <div className="footer-address mt24">
+                                <div className="footer-address mt-24">
                                     <p>{companyData.address}</p>
                                     <p>Email: {companyData.email}</p>
                                     <p>Fax: {companyData.fax}</p>
@@ -25,7 +25,7 @@ const Footer = ({ companyData, sections, contactData, copyrightText }) => {
                                 <div className="footer-title">
                                     <h3 className='under-line'>{section.title}</h3>
                                 </div>
-                                <ul className='mt24 d-flex flex-column gap-2'>
+                                <ul className='mt-24 d-flex flex-column gap-2'>
                                     {section.links.map((link, linkIndex) => (
                                         <li className='footer-list-item' key={linkIndex}><Link to={link.url}>{link.text}</Link></li>
                                     ))}
@@ -36,7 +36,7 @@ const Footer = ({ companyData, sections, contactData, copyrightText }) => {
                             <div className="footer-title">
                                 <h3 className='under-line'>{contactData.title}</h3>
                             </div>
-                            <ul className='mt24  d-flex flex-column gap-4'>
+                            <ul className='mt-24  d-flex flex-column gap-4'>
                                 <li>{contactData.address}</li>
                                 <li><h5>Email: {contactData.email}</h5></li>
                                 <li><h5>Fax: {contactData.fax}</h5></li>
